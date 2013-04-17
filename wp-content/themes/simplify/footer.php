@@ -1,6 +1,6 @@
 <?php
 /* 	Simplify Theme's Footer
-	Copyright: 2012, D5 Creation, www.d5creation.com
+	Copyright: 2012-2013, D5 Creation, www.d5creation.com
 	Based on the Simplest D5 Framework for WordPress
 	Since Simplify 1.0
 */
@@ -16,7 +16,7 @@
    	get_sidebar( 'footer' );
 ?>
 <div class="clear"></div>
-<div id="creditline"><?php echo of_get_option('copyright', '&copy; ' . date("Y"). ': ' . get_bloginfo( 'name' ) . ', All Rights Reserved '); simplify_creditline(); ?></div>
+<div id="creditline"><?php echo of_get_option('copyright', '&copy; ' . date("Y"). ': ' . get_bloginfo( 'name' ) . '  '); simplify_creditline(); ?></div>
 </div> <!-- footer-content -->
 </div> <!-- footer -->
 <?php wp_footer(); ?>

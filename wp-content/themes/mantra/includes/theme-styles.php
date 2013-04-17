@@ -7,57 +7,62 @@
  */
  
 // Adding the viewport meta if the mobile view has been enabled
-if($mantra_mobile=="Enable") add_action('wp_head', 'mantra_mobile_meta');
 
 function mantra_mobile_meta() {
 global $mantra_options;
 foreach ($mantra_options as $key => $value) {
     							 ${"$key"} = $value ;
 									}
- echo '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">';
+ return '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">';
 }
 
 
-// Loading mantra css style
+function mantra_register_styles() {
+	global $mantra_options;
+	foreach ($mantra_options as $key => $value) { ${"$key"} = $value ;}
 
-function mantra_style() {
-global $mantra_options;
-foreach ($mantra_options as $key => $value) {
-    							 ${"$key"} = $value ;
-									}
-// Loading the style.css
 	wp_register_style( 'mantras', get_stylesheet_uri() );
-	wp_enqueue_style( 'mantras');
-
-}
-
-
-// Loading google font styles
-function mantra_google_styles() {
-global $mantra_options;
-foreach ($mantra_options as $key => $value) {
-    							 ${"$key"} = $value ;
-									}
+	
+	if($mantra_mobile=="Enable") {	wp_register_style( 'mantra-mobile', get_template_directory_uri() . '/style-mobile.css' );}
+	
 	wp_register_style( 'mantra_googlefont', esc_attr($mantra_googlefont2 ));
 	wp_register_style( 'mantra_googlefonttitle', esc_attr($mantra_googlefonttitle2 ));
 	wp_register_style( 'mantra_googlefontside',esc_attr($mantra_googlefontside2) );
 	wp_register_style( 'mantra_googlefontsubheader', esc_attr($mantra_googlefontsubheader2) );
+	
+}
+
+add_action('init', 'mantra_register_styles' );
+
+
+function mantra_enqueue_styles() {
+	global $mantra_options;
+	foreach ($mantra_options as $key => $value) { ${"$key"} = $value ;}
+	
+	wp_enqueue_style( 'mantras');
+	
 	wp_enqueue_style( 'mantra_googlefont');
 	wp_enqueue_style( 'mantra_googlefonttitle');
 	wp_enqueue_style( 'mantra_googlefontside');
 	wp_enqueue_style( 'mantra_googlefontsubheader');
-	// Loading the style-mobile.css if the mobile view is enabled
-	if($mantra_mobile=="Enable") {	wp_register_style( 'mantra-mobile', get_template_directory_uri() . '/style-mobile.css' );
-	wp_enqueue_style( 'mantra-mobile');}
+
 
 }
+		
+add_action('wp_enqueue_scripts', 'mantra_enqueue_styles' );
+		
+function mantra_styles_echo() {
+	global $mantra_options;
+	
+	foreach ($mantra_options as $key => $value) { ${"$key"} = $value ;}
+	
+	echo mantra_custom_styles();
+	if($mantra_mobile=="Enable") {wp_enqueue_style( 'mantra-mobile'); echo mantra_mobile_meta();}
+	echo mantra_customcss();
+} 
 
-// CSS loading and hook into wp_enque_scripts
+add_action('wp_head', 'mantra_styles_echo');
 
-		add_action('wp_print_styles', 'mantra_style',1 );
-		add_action('wp_head', 'mantra_custom_styles' ,8);
-if($mantra_customcss!="/* Mantra Custom CSS */")		add_action('wp_head', 'mantra_customcss',9);
-		add_action('wp_head', 'mantra_google_styles');
 		
 // JS loading and hook into wp_enque_scripts
 

@@ -1,10 +1,10 @@
 /*
  * Theme Name: Mantra
- * Theme URI: http://www.riotreactions.com/mantra
+ * Theme URI: http://www.cryoutcreations.eu/mantra
  * Description: Mantra is a do-it-yourself WordPress theme, featuring a pack of over 100 customization options and easy to use tweaks capable of tuning WordPress to your very specific needs and likes. With the help of a simple and efficient user interface you can customize everything:the layout (1,2 or 3 columns), total and partial site widths, colors (all texts, links, backgrounds etc.), fonts (over 35 font-families plus all Google Fonts), text and header sizes, post metas, post excerpts, post formats, header and background images, custom menus, 27 social media links and icons, pins, bullets and much much more. With a fully responsive layout,a customizable showcase presentation page, animated slider, magazine and blog layouts, 8 widget areas, modern graphics and an easy and intuitive admin section, you can start creating your dream site right now.
  * Author: Cryout Creations
  * Author URI: http://www.cryoutcreations.eu
- * Version: 1.9.9.7
+ * Version: 2.0.1
  * License: GNU General Public License v2.0
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Tags: black, red, blue, white, silver, light, dark, one-column, two-columns, three-columns, right-sidebar, left-sidebar, flexible-width, fixed-width, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, front-page-post-form, full-width-template,  microformats, post-formats, rtl-language-support,  sticky-post, theme-options, threaded-comments, translation-ready
@@ -222,10 +222,18 @@ div.menu,
 
 #branding {
 display:block;
-float:none;
+float:left;
 clear:both;
 height:75px;
 padding:0;
+position:relative;
+overflow:hidden;
+}
+
+a#logo {
+display:inline;
+height:100%;
+margin-left:20px;
 }
 
 #forbottom {
@@ -451,7 +459,6 @@ a:hover {
 	float: left;
 	font-size: 36px;
 	line-height: 60px;
-	margin-top:10px;
 	margin-left:20px;
 	padding-left:20px;
 }
@@ -464,22 +471,34 @@ a:hover {
  	-moz-text-shadow: -2px -2px 0px #000;
 	-webkit-text-shadow: -2px -2px 0px #000;
 	text-shadow: -2px -2px 0px #000;
+	display:block;
 }
 #site-description {
 	display:inline;
 	float: left;
 	font-size: 15px;
 	line-height:60px;
-	margin-top:10px;
 	margin-left:20px;
 	color:#999;
-	padding-left:10px;
+	padding-left:0px;
 	letter-spacing: 0.1em;
 	-moz-text-shadow: 0px -1px 0px #000;
 	-webkit-text-shadow: 0px -1px 0px #000;
 	text-shadow: 0px -1px 0px #000;
 }
 
+#header-container {
+display:block;
+float:none;
+position:absolute;
+top:0px;
+width:100%;
+height:100%;
+}
+
+#header-container > div {
+margin-top:20px;
+}
 
 /* =Menu -PRIMARY
 -------------------------------------------------------------- */
@@ -1509,9 +1528,7 @@ h3#reply-title {
 #respond .required {
 	color: #0D85CC;
 	font-weight: bold;
-	display:block;
-	float:left;
-	padding-top:3px;
+	display:inline;
 }
 
 #commentform  {
@@ -1740,7 +1757,7 @@ color:#0D85CC;
 #footer-widget-area ul ul li {
 	display:block;
 	float:none;
-	background:none !important;
+	background:none;
 	padding-left:0;
 	margin-left:0;
 }
@@ -1969,8 +1986,6 @@ font-family:Arial;
 				  .contentsearch #searchsubmit , .widget_search #searchsubmit{margin-top:3px;}
 }
 
-.tagcloud {padding-left:15px;}
-
 #searchsubmit:hover {
 background:#888;
 }
@@ -2115,6 +2130,13 @@ float:right;
 }
 .socials img {
 	width:37px;
+}
+
+#header-container >div#sheader {
+position:absolute;
+margin:0;
+top:5px;
+right:5px;
 }
 #smenul, #smenur {
 	margin-top:-8px;
@@ -2563,7 +2585,7 @@ margin-bottom:8px;
 
 /* Multi-column short code */
 .multi-column {display: block; width: 100%; float: left; margin: 10px 0;}
-.short-columns {display: inline-block; float: left; margin: 0 3px; padding: 4px; }
+.short-columns {display: inline-block; float: left; margin: 0px; padding: 4px; }
 .column-12 {width: 48%;}
 .column-13 {width: 31%;}
 .column-14 {width: 23%;}
@@ -2680,6 +2702,8 @@ text-decoration:underline;
 }
 
 /* shareaddy fix */ .sharedaddy ul > li { background: none !important; text-indent: 0 !important; }
+
+/*woocommerce  fix*/ .woocommerce .product .entry-summary {clear:none}
 
 
 

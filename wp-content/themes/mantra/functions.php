@@ -7,6 +7,9 @@
  * @package mantra 
  */
  
+ // Variable for theme version
+ define ("_VERSION","2.0.1");
+ 
 require_once(dirname(__FILE__) . "/admin/main.php"); // Load necessary admin files 
  
 //Loading include fiels

@@ -1,6 +1,6 @@
 <?php
 /* 	Simplify Theme's Functions
-	Copyright: 2012, D5 Creation, www.d5creation.com
+	Copyright: 2012-2013, D5 Creation, www.d5creation.com
 	Based on the Simplest D5 Framework for WordPress
 	Since Simplify 1.0
 */
@@ -72,35 +72,17 @@
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
 		wp_enqueue_script( 'comment-reply' ); 
 	}
-	
+	wp_enqueue_style('simplify-style', get_stylesheet_uri(), false );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'd5corporate-menu-style', get_template_directory_uri(). '/js/menu.js' );
-	wp_enqueue_style('d5corporate-gfonts1', 'http://fonts.googleapis.com/css?family=Poiret+One', false );
-	wp_enqueue_style('d5corporate-gfonts2', 'http://fonts.googleapis.com/css?family=Anaheim', false );
+	wp_enqueue_script( 'simplify-menu-style', get_template_directory_uri(). '/js/menu.js' );
+	wp_enqueue_style('simplify-gfonts1', 'http://fonts.googleapis.com/css?family=Poiret+One', false );
+	wp_enqueue_style('simplify-gfonts2', 'http://fonts.googleapis.com/css?family=Anaheim', false );
+	if ( of_get_option('responsive', '0') == '1' ) : wp_enqueue_style('simplify-responsive', get_template_directory_uri(). '/style-responsive.css' ); endif;
 	}
 	add_action( 'wp_enqueue_scripts', 'simplify_enqueue_scripts' );
-
-
-// 	Functions for adding some custom code within the head tag of site
-	function simplify_custom_code() {
-?>
-	
-	<style type="text/css">
-	.site-title a, 
-	.site-title a:active, 
-	.site-title a:hover {
-	
-	color: #<?php echo get_header_textcolor(); ?>;
-	}
-	</style>
-		
-<?php 
-	}
-	
-	add_action('wp_head', 'simplify_custom_code');
 	
 //	function tied to the excerpt_more filter hook.
-	function simplify_excerpt_length( $length ) {
+	function simplify_excerpt_length( $Length ) {
 	global $simplifyExcerptLength;
 	if ($simplifyExcerptLength) {
     return $simplifyExcerptLength;
@@ -123,7 +105,7 @@
 	function simplify_widgets_init() {
 
 	register_sidebar( array(
-		'name' => __( 'Primary Sidebar', 'simplify' ),
+		'name' => 'Primary Sidebar', 
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -132,7 +114,7 @@
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Secondary Sidebar', 'simplify' ),
+		'name' =>  'Secondary Sidebar', 
 		'id' => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -141,9 +123,9 @@
 	) );
 	 
 	register_sidebar( array(
-		'name' => __( 'Footer Area One', 'simplify' ),
+		'name' => 'Footer Area One', 
 		'id' => 'sidebar-3',
-		'description' => __( 'An optional widget area for your site footer', 'simplify' ),
+		'description' => 'An optional widget area for your site footer', 
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -151,9 +133,9 @@
 	) );
 	    
 	register_sidebar( array(
-		'name' => __( 'Footer Area Two', 'simplify' ),
+		'name' => 'Footer Area Two', 
 		'id' => 'sidebar-4',
-		'description' => __( 'An optional widget area for your site footer', 'simplify' ),
+		'description' => 'An optional widget area for your site footer',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -161,9 +143,9 @@
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Footer Area Three', 'simplify' ),
+		'name' => 'Footer Area Three',
 		'id' => 'sidebar-5',
-		'description' => __( 'An optional widget area for your site footer', 'simplify' ),
+		'description' => 'An optional widget area for your site footer', 
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -172,9 +154,9 @@
 	
 	
 	register_sidebar( array(
-		'name' => __( 'Footer Area Four', 'simplify' ),
+		'name' =>  'Footer Area Four', 
 		'id' => 'sidebar-6',
-		'description' => __( 'An optional widget area for your site footer', 'simplify' ),
+		'description' =>  'An optional widget area for your site footer', 
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',

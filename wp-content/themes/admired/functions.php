@@ -4,6 +4,15 @@
  *
  * @since admired 1.0
  */
+
+/**
+*	Added by Brian, remove this if something's wrong.
+*	
+*	Gets rid of the toolbar for non-admin users.
+*/
+
+if (!current_user_can('manage_options') ) { show_admin_bar(false); }
+
 	 
 // Set the content width.
 if ( ! isset( $content_width ) )

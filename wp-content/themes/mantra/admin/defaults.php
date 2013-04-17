@@ -12,8 +12,9 @@ $mantra_defaults = array(
 "mantra_sidebar" => 250,
 "mantra_sidewidthRel" => 60,
 "mantra_sidebarRel" => 20,
-"mantra_hheight" => "75",
-"mantra_hcenter" => "",
+"mantra_mobile" => "Enable",
+"mantra_hcontain" => "",
+
 
 "mantra_frontpage" => "Disable",
 "mantra_fpsliderwidth" => "800",
@@ -62,7 +63,7 @@ $mantra_defaults = array(
 "mantra_columnlink1" => "",
 "mantra_columnimg2" => get_template_directory_uri()."/images/slider/mantra-column.jpg",
 "mantra_columntitle2" => " HTML tags",
-"mantra_columntext2" => "You can also have <a href='http://www.riotreactions.com'>links</a> here as well as all other <strong>HTML tags</strong>.",
+"mantra_columntext2" => "You can also have <a href='http://www.riotreactions.com'>links</a> here as well as some <strong>HTML tags</strong>.",
 "mantra_columnlink2" => "",
 "mantra_columnimg3" => get_template_directory_uri()."/images/slider/mantra-column.jpg",
 "mantra_columntitle3" => "",
@@ -76,7 +77,7 @@ $mantra_defaults = array(
 "mantra_fronttext1" => "This could be a title",
 "mantra_fronttext2" => "And this is a second title",
 "mantra_fronttitlecolor" => "#333333",
-"mantra_fronttext3" => "And here you could have a whole lot of text. Or not. It's all up to you. Deleting all text inside the appropriate input in the Mantra Settings will remove this whole text zone. It can also contain all HTML tags.<br /> Just try everything out and see what suits you. Have fun and good luck! ",
+"mantra_fronttext3" => "And here you could have a whole lot of text. Or not. It's all up to you. Deleting all text inside the appropriate input in the Mantra Settings will remove this whole text zone. It can also contain some HTML tags.<br /> Just try everything out and see what suits you. Have fun and good luck! ",
 "mantra_fronttext4" => "",
 
 "mantra_fronthideheader" => "",
@@ -84,6 +85,15 @@ $mantra_defaults = array(
 "mantra_fronthidewidget" => "",
 "mantra_fronthidefooter" => "",
 "mantra_fronthideback" => "",
+
+
+"mantra_hheight" => "75",
+"mantra_hcenter" => "",
+"mantra_menurounded" => "Enable",
+"mantra_logoupload" => "",
+"mantra_favicon" => "", 
+"mantra_siteheader" => "Site Title and Description",
+"mantra_headermargin" => "20",
 
 "mantra_fontfamily" => 'Segoe UI, Arial, sans-serif',
 "mantra_googlefont" => '',
@@ -130,6 +140,8 @@ $mantra_defaults = array(
 "mantra_footertext" => "#666666",
 "mantra_footerhover" => "#888888",
 
+"mantra_breadcrumbs" => "Disable",
+"mantra_pagination" => "Enable",
 "mantra_caption" => "Light",
 "mantra_image" => "Seven",
 "mantra_pin" => "Pin2",
@@ -137,7 +149,6 @@ $mantra_defaults = array(
 "mantra_metaback" => "Gray",
 "mantra_postseparator" => "Hide",
 "mantra_contentlist" => "Show",
-"mantra_title" => "Show",
 "mantra_pagetitle" => "Show",
 "mantra_categtitle" => "Show",
 "mantra_tables" => "Disable",
@@ -145,7 +156,6 @@ $mantra_defaults = array(
 "mantra_comtext" => "Show",
 "mantra_comclosed" => "Hide everywhere",
 "mantra_comoff" => "Show",
-"mantra_copyright" => "",
 
 "mantra_postcomlink" => "Show",
 "mantra_postdate" => "Show",
@@ -189,12 +199,7 @@ $mantra_defaults = array(
 "mantra_socialsdisplay2" => "",
 "mantra_socialsdisplay3" => "",
 
-"mantra_linkheader" => "Disable",
-"mantra_breadcrumbs" => "Disable",
-"mantra_pagination" => "Enable",
-"mantra_mobile" => "Enable",
-"mantra_hcontain" => "",
-"mantra_favicon" => "",
+"mantra_copyright" => "",
 "mantra_customcss" => "/* Mantra Custom CSS */  ",
 "mantra_customjs" => "",
 "mantra_seo" => "Enable",

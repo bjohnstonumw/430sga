@@ -203,12 +203,9 @@ a:active img[class*="wp-image-"] {
 }
 
 /* Author Info */
-.singular #author-info {
-	background: #060606;
-	border-color: #222;
-}
-.archive #author-info {
-	border-color: #222;
+#author-info {
+	background-color: #060606;
+    border-color: #333333;
 }
 #author-avatar img {
 	background: #000;

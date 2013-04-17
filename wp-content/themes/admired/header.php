@@ -55,6 +55,10 @@ $options = get_option('admired_theme_options'); ?>
 		get_template_part('top','menu'); } else { echo "";}?>
 		<header id="branding" role="banner">
 			<div id="header-group" class="clearfix">
+	<!-- Brian's brilliant mess. Delete if something's globally messed up -->
+	<div align="right">
+		<?php wp_loginout(); ?>
+	</div>
 				<div id="header-logo">
 					<?php
 					if ( ! empty( $options['admired_hide_title_discription'] ) && $options['admired_header_logo'] ) { ?>

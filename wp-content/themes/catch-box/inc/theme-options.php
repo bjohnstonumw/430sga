@@ -88,6 +88,15 @@ function catchbox_theme_options_init() {
 		'theme_options', // Menu slug, used to uniquely identify the page; see catchbox_theme_options_add_page()
 		'general' // Settings section. Same as the first argument in the add_settings_section() above
 	);	
+	
+	// Register our individual settings fields
+	add_settings_field(
+		'webclip', // Unique identifier for the field for this section
+		__( 'Web Clip Icon URL', 'catchbox' ), // Setting field label
+		'catchbox_settings_field_webclip', // Function that renders the settings field
+		'theme_options', // Menu slug, used to uniquely identify the page; see catchbox_theme_options_add_page()
+		'general' // Settings section. Same as the first argument in the add_settings_section() above
+	);		
 
 	// Register our individual settings fields
 	add_settings_field(
@@ -289,6 +298,20 @@ function catchbox_settings_field_favicon() {
 	?>
 	<input class="upload-url" type="text" name="catchbox_theme_options[fav_icon]" id="fav-icon" size="65" value="<?php if ( isset( $options[ 'fav_icon' ] ) ) echo esc_attr( $options[ 'fav_icon'] ); ?>" />
     <input id="st_upload_button" class="st_upload_button button" name="wsl-image-add" type="button" value="<?php esc_attr_e( 'Add/Change Favicon','simplecatch' );?>" />
+	<?php
+}
+
+
+/**
+ * Renders the favicon url setting field.
+ *
+ * @since Catch Box 2.0.3
+ */
+function catchbox_settings_field_webclip() {
+	$options = catchbox_get_theme_options();
+	?>
+	<input class="upload-url" type="text" name="catchbox_theme_options[web_clip]" id="web-clip" size="65" value="<?php if ( isset( $options[ 'web_clip' ] ) ) echo esc_attr( $options[ 'web_clip'] ); ?>" />
+    <input id="st_upload_button" class="st_upload_button button" name="wsl-image-add" type="button" value="<?php esc_attr_e( 'Add/Change Web Clip Icon','simplecatch' );?>" />
 	<?php
 }
 
@@ -826,7 +849,7 @@ function catchbox_options_social_links() {
                     </tr>
                     
                     <tr>
-                        <th scope="row"><label><?php _e( 'Viemo', 'catchbox' ); ?></label></th>
+                        <th scope="row"><label><?php _e( 'Vimeo', 'catchbox' ); ?></label></th>
                         <td><input type="text" size="45" name="catchbox_options_social_links[social_viemo]" value="<?php if ( isset( $options[ 'social_viemo' ] ) ) echo esc_url( $options[ 'social_viemo' ] ); ?>" />
                         </td>
                     </tr>
@@ -850,7 +873,7 @@ function catchbox_options_social_links() {
                     </tr>
                     
                     <tr>
-                        <th scope="row"><label><?php _e( 'Flicker', 'catchbox' ); ?></label></th>
+                        <th scope="row"><label><?php _e( 'Flickr', 'catchbox' ); ?></label></th>
                         <td><input type="text" size="45" name="catchbox_options_social_links[social_flickr]" value="<?php if ( isset( $options[ 'social_flickr' ] ) ) echo esc_url( $options[ 'social_flickr' ] ); ?>" />
                         </td>
                     </tr>
@@ -1099,6 +1122,10 @@ function catchbox_theme_options_validate( $input ) {
 	// favicon url
 	if ( isset( $input['fav_icon'] ) )	
 		$output['fav_icon'] = esc_url_raw($input['fav_icon']);	
+		
+	// web clicp icon url
+	if ( isset( $input['web_clip'] ) )	
+		$output['web_clip'] = esc_url_raw($input['web_clip']);			
 
 	// Color scheme must be in our array of color scheme options
 	if ( isset( $input['color_scheme'] ) && array_key_exists( $input['color_scheme'], catchbox_color_schemes() ) )
@@ -1375,9 +1402,9 @@ function catchbox_socialprofile() {
 						$catchbox_socialprofile .= '<li class="tumblr"><a href="'.$options['social_tumblr'].'" title="Tumblr" target="_blank">Tumblr</a></li>';
 					}	
 					
-					//Viemo
+					//Vimeo
 					if ($options['social_viemo']) {
-						$catchbox_socialprofile .= '<li class="viemo"><a href="'.$options['social_viemo'].'" title="Viemo" target="_blank">Viemo</a></li>';
+						$catchbox_socialprofile .= '<li class="vimeo"><a href="'.$options['social_viemo'].'" title="Vimeo" target="_blank">Vimeo</a></li>';
 					}	
 					
 					//Dribbble
@@ -1395,9 +1422,9 @@ function catchbox_socialprofile() {
 						$catchbox_socialprofile .= '<li class="aim"><a href="'.$options['social_aim'].'" title="Aim" target="_blank">Aim</a></li>';
 					}	
 					
-					//Flicker
+					//Flickr
 					if ($options['social_flickr']) {
-						$catchbox_socialprofile .= '<li class="flickr"><a href="'.$options['social_flickr'].'" title="Flicker" target="_blank">Flicker</a></li>';
+						$catchbox_socialprofile .= '<li class="flickr"><a href="'.$options['social_flickr'].'" title="Flickr" target="_blank">Flickr</a></li>';
 					}	
 					
 					$catchbox_socialprofile .= '
@@ -1433,6 +1460,7 @@ function catchbox_themeoption_invalidate_caches() {
 	delete_transient( 'catchbox_favicon' );	//Favicon
 	delete_transient( 'catchbox_sliders' ); // Featured Slider
 	delete_transient( 'catchbox_socialprofile' ); //Social Profile
+	delete_transient( 'catchbox_webclip' );	//Favicon
 }
 
 /* Clearing Theme Option Cache 

@@ -5,16 +5,16 @@ Theme URI: http://d5creation.com/themes/simplify/
 Author: D5 Creation
 Author URI: http://d5creation.com/
 
-Description: Simplify is a CSS3 Powered and WordPress 3.5 Ready Theme for Small Business Companies. Customizable Background and other options will give the WordPress Driven Site an attractive look.  Simplify is super elegant and Professional Theme which will be adjusted automatically with all smart devices.  Right and Footer Sidebar will be usable for showing the widgets. Full Wide Template can be used for showing showcase or other pages. You can Visit the Simplify Demo <a href="http://demo.d5creation.com/wp/themes/simplify/" target="_blank"><strong>Here</strong></a>. Minimum Requirement: WordPress 3.5.1
+Description: Simplify is a CSS3 Powered and WordPress 3.5 Ready Responsive Theme for Small Business Companies. Customizable Background and other options will give the WordPress Driven Site an attractive look.  Simplify is super elegant and Professional Responsive Theme which will be adjusted automatically with all smart devices.  Right and Footer Sidebar will be usable for showing the widgets. Full Wide Template can be used for showing showcase or other pages. You can Visit the Simplify Demo <a href="http://demo.d5creation.com/wp/themes/simplify/" target="_blank"><strong>Here</strong></a>. Minimum Requirement: WordPress 3.5.1
 
-Version: 1.2.4
+Version: 1.3.1
 
 Tags: gray, light, two-columns, right-sidebar, fixed-width, black, blue, custom-header, custom-background, custom-menu, threaded-comments, sticky-post, rtl-language-support, front-page-post-form, full-width-template, theme-options  
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simplify WordPress Theme, Copyright 2012: D5 Creation (www.d6creation.com)
+Simplify WordPress Theme, Copyright 2012: D5 Creation (www.d5creation.com)
 Simplify is distributed under the terms of the GNU GPL
 
 Text Domain: simplify
@@ -217,7 +217,7 @@ img {
 #header-bottom {
 	background: url("images/header-bottom.png") no-repeat scroll center top #3c4143;
     height: 400px;
-	margin: -7px 0 0;
+	margin: -7px 0 -410px;
 }
 
 img.site-logo {
@@ -916,7 +916,7 @@ input#s {
 #heading {
 	color: #CCCCCC;
     font-size: 35px;
-    margin: -425px auto 40px;
+    margin: 40px auto;
     text-align: center;
     width: 700px;
 	font-weight: 100;
@@ -1404,5 +1404,23 @@ h2#client-text.post-title {
     max-height: 100px;
     vertical-align: middle;
     width: 100px;
+}
+
+
+/* =Media Print
+-------------------------------------------------------------- */
+@media print {
+
+h1 {
+	page-break-before:always;
+}
+
+h1,  h2,  h3,  h4,  h5,  h6 {
+	page-break-after:avoid;
+}
+
+ul,  ol,  dl {
+	page-break-before:avoid;
+}
 }
 

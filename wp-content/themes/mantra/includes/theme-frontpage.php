@@ -22,7 +22,7 @@ foreach ($mantra_options as $key => $value) {
 	// Flash animation for columns
 
 
-    jQuery(window).load(function() {
+    jQuery(document).ready(function() {
 	// Slider creation
         jQuery('#slider').nivoSlider({
 

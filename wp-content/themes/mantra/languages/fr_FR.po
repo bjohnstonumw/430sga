@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mantra Wordpress Theme 1.9.8\n"
+"Project-Id-Version: Mantra Wordpress Theme 1.9.9.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 15:55+0100\n"
-"PO-Revision-Date: 2012-09-19 15:55+0100\n"
+"POT-Creation-Date: 2013-03-25 23:33+0100\n"
+"PO-Revision-Date: 2013-03-25 23:40+0100\n"
 "Last-Translator: Luc Capronnier <lcapronnier@yahoo.com>\n"
 "Language-Team: Cryout Creations <contact@htx.ro>\n"
 "Language: fr_FR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:17
@@ -30,39 +30,39 @@ msgstr ""
 "Désolé, la page que vous demandez n'a pu être trouvée. Une recherche peut "
 "être utile."
 
-#: archive.php:25
+#: archive.php:26
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Archives journalières: %s"
 
-#: archive.php:27
+#: archive.php:28
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Archives mensuelles: %s"
 
-#: archive.php:27
+#: archive.php:28
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:29
+#: archive.php:30
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Archives annuelles: %s"
 
-#: archive.php:29
+#: archive.php:30
 msgid "Y"
 msgstr "Y"
 
-#: archive.php:31
+#: archive.php:32
 msgid "Blog Archives"
 msgstr "Articles archivés"
 
-#: archive.php:57 author.php:74 category.php:50 index.php:40 search.php:40
-#: tag.php:51 template-blog.php:36
+#: archive.php:58 author.php:75 category.php:51 index.php:41 search.php:41
+#: tag.php:52 template-blog.php:36
 msgid "Nothing Found"
 msgstr "Aucun article trouvé"
 
-#: archive.php:61 author.php:78 category.php:54 index.php:44 tag.php:55
+#: archive.php:62 author.php:79 category.php:55 index.php:45 tag.php:56
 #: template-blog.php:40
 msgid ""
 "Apologies, but no results were found for the requested archive. Perhaps "
@@ -80,7 +80,7 @@ msgstr "Retour à %s"
 msgid "By"
 msgstr "De"
 
-#: attachment.php:33 includes/theme-loop.php:145
+#: attachment.php:33 includes/theme-loop.php:147
 #, php-format
 msgid "View all posts by %s"
 msgstr "Voir tous les artciles de %s"
@@ -96,12 +96,12 @@ msgstr "Taille originelle de %s pixels"
 
 #: attachment.php:53
 msgid "Link to full-size image"
-msgstr "Lien vers l'image originelle"
+msgstr "Lien vers l'image d'origine"
 
 #: attachment.php:60 attachment.php:107 content-aside.php:48
-#: content-chat.php:48 content-gallery.php:64 content-image.php:41
-#: content-link.php:48 content-page.php:22 content-quote.php:46
-#: content-status.php:49 content.php:76 single.php:53
+#: content-chat.php:49 content-gallery.php:65 content-image.php:42
+#: content-link.php:49 content-page.php:22 content-quote.php:46
+#: content-status.php:48 content.php:76 single.php:54
 #: template-onecolumn.php:27
 msgid "Edit"
 msgstr "Modifier"
@@ -110,24 +110,24 @@ msgstr "Modifier"
 msgid "Continue reading"
 msgstr "Lire la suite"
 
-#: attachment.php:101 content-aside.php:39 content-chat.php:37
-#: content-gallery.php:54 content-image.php:32 content-link.php:37
-#: content-page.php:21 content-quote.php:36 content-status.php:40
-#: content.php:48 content.php:65 single.php:31 template-onecolumn.php:26
+#: attachment.php:101 content-aside.php:39 content-chat.php:38
+#: content-gallery.php:55 content-image.php:33 content-link.php:38
+#: content-page.php:21 content-quote.php:36 content-status.php:39
+#: content.php:49 content.php:65 single.php:32 template-onecolumn.php:26
 msgid "Pages:"
 msgstr "Pages:"
 
-#: author.php:28
+#: author.php:29
 #, php-format
 msgid "Author Archives: %s"
 msgstr "Archives par auteur: %s"
 
-#: author.php:49 single.php:40
+#: author.php:50 single.php:41
 #, php-format
 msgid "About %s"
 msgstr "A propos de %s"
 
-#: category.php:19
+#: category.php:20
 #, php-format
 msgid "Category Archives: %s"
 msgstr "Archives par catégorie: %s"
@@ -140,25 +140,25 @@ msgstr ""
 "voir les commentaires."
 
 #: content-aside.php:16 content-chat.php:16 content-gallery.php:16
-#: content-gallery.php:48 content-image.php:15 content-link.php:16
+#: content-gallery.php:49 content-image.php:15 content-link.php:16
 #: content-quote.php:14 content-status.php:15 content.php:20
 #, php-format
 msgid "Permalink to %s"
 msgstr "Permalien vers %s"
 
-#: content-aside.php:21
+#: content-aside.php:20
 msgid "Aside"
 msgstr "En passant"
 
-#: content-aside.php:38 content-chat.php:36 content-gallery.php:32
-#: content-image.php:31 content-link.php:36 content-quote.php:35
-#: content-status.php:39
+#: content-aside.php:38 content-chat.php:37 content-gallery.php:33
+#: content-image.php:32 content-link.php:37 content-quote.php:35
+#: content-status.php:38
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-aside.php:46 content-chat.php:44 content-gallery.php:61
-#: content-image.php:38 content-link.php:44 content-quote.php:43
-#: content-status.php:47 content.php:74 includes/theme-loop.php:171
+#: content-aside.php:46 content-chat.php:45 content-gallery.php:62
+#: content-image.php:39 content-link.php:45 content-quote.php:43
+#: content-status.php:46 content.php:74 includes/theme-loop.php:185
 msgid "Tagged"
 msgstr "Avec mots-clefs"
 
@@ -170,7 +170,7 @@ msgstr "Chat"
 msgid "Gallery"
 msgstr "Galerie"
 
-#: content-gallery.php:47
+#: content-gallery.php:48
 #, php-format
 msgid "This gallery contains <a %1$s>%2$s photo</a>."
 msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
@@ -191,33 +191,37 @@ msgstr "Image"
 msgid "Link"
 msgstr "Lien"
 
-#: content-page.php:27 includes/theme-comments.php:130
+#: content-page.php:27 includes/theme-comments.php:136
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: content-quote.php:19
+#: content-quote.php:18
 msgid "Quote"
 msgstr "Citation"
 
-#: content-status.php:31
+#: content-status.php:30
 msgid "Status"
 msgstr "Etat"
 
-#: search.php:19
+#: search.php:20
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Résultat de la recherche de: %s"
 
-#: search.php:38
+#: search.php:39
 #, php-format
 msgid "No search results for: %s"
 msgstr "Pas de résultat pour : %s"
 
-#: single.php:44
+#: searchform.php:1
+msgid "Search"
+msgstr "Rechercher"
+
+#: single.php:45
 msgid "View all posts by "
 msgstr "Voir tous les articles de "
 
-#: tag.php:20
+#: tag.php:21
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Archives par mot-clef: %s"
@@ -578,8 +582,8 @@ msgid "Comments off"
 msgstr "Commentaires désactivés"
 
 #: admin/main.php:167
-msgid "Insert footer copyright"
-msgstr "Insertion de copyright en bas de page"
+msgid "Custom Footer Text"
+msgstr "Text de pied de page"
 
 #: admin/main.php:169
 msgid "Post Comments Link"
@@ -925,6 +929,10 @@ msgstr ""
 "\tDans le cas d'une mise en page à 3 colonnes avec 2 volets, chaque volet "
 "occupe la moitié de la zone volet."
 
+#: admin/settings.php:241
+msgid "Center the header image horizontally"
+msgstr "Centrer l'image du bandeau horizontallement"
+
 #: admin/settings.php:244
 msgid ""
 "Select the header's height. After saving the settings go and upload your new "
@@ -938,7 +946,7 @@ msgstr ""
 #: admin/settings.php:1367 admin/settings.php:1429 admin/settings.php:1637
 #: admin/settings.php:1666 admin/settings.php:1689 admin/settings.php:1712
 #: admin/settings.php:1761 admin/settings.php:1890 admin/settings.php:1905
-#: admin/settings.php:1920 admin/settings.php:1935 admin/settings.php:1977
+#: admin/settings.php:1920 admin/settings.php:1935 admin/settings.php:1986
 msgid "Enable"
 msgstr "Activer"
 
@@ -946,21 +954,21 @@ msgstr "Activer"
 #: admin/settings.php:1367 admin/settings.php:1429 admin/settings.php:1637
 #: admin/settings.php:1666 admin/settings.php:1689 admin/settings.php:1712
 #: admin/settings.php:1761 admin/settings.php:1890 admin/settings.php:1905
-#: admin/settings.php:1920 admin/settings.php:1935 admin/settings.php:1977
+#: admin/settings.php:1920 admin/settings.php:1935 admin/settings.php:1986
 msgid "Disable"
 msgstr "Désactiver"
 
 #: admin/settings.php:265
 msgid ""
-"Enable the presentation front-page. This will become your new home page and "
-"it will replace whatever page you have selected as homepage. It has a slider "
-"and columns for presentation\n"
-"\t\ttext and images."
+"Enable the presentation front-page. This will become your new home page. It "
+"has a slider and columns for presentation\n"
+"\t\ttext and images.<br>If you have this enabled but don't see a "
+"Presentation page then go to <a href='options-reading.php'> Settings &raquo; "
+"Reading </a> and make sure you have selected <strong>Front Page Displays</"
+"strong> as <Strong>Your Latest Posts</strong>."
 msgstr ""
-"Activer la page de présentation. Celle-ci devient alors la nouvelle page "
-"d'accueil, remplaçant toute page sélectionnée comme telle auparavant. Elle "
-"intègre un diaporama et plusieurs colonnes pour la mise en valeur de textes "
-"et d'images."
+"Activer la page de présentation. Cette page deviendra votre nouvelle page "
+"d'accueil. Elle possède un diaporama, et des colonnes pour la présentation"
 
 #: admin/settings.php:275
 msgid "Slider Dimensions:"
@@ -1967,7 +1975,15 @@ msgstr ""
 "utilisation de numéros pour naviguer entre ces pages en lieu et place des "
 "liens <b>Articles antérieurs</b> et <b>Articles plus récents</b>."
 
-#: admin/settings.php:1943
+#: admin/settings.php:1949
+msgid ""
+"Make the header image totally responsive. It will scale while keeping aspect "
+"ratio."
+msgstr ""
+"Rendre l'image du bandeau adaptable. L'image sera redimentionnée en gardant "
+"ses proportions."
+
+#: admin/settings.php:1952
 msgid ""
 "Enable the mobile view and make Mantra responsive. The layout and look of "
 "your blog will change depending on what device and what resolution it is "
@@ -1977,11 +1993,11 @@ msgstr ""
 "l'affichage de votre site vont changer en fonction du terminal utilisé et de "
 "sa résolution."
 
-#: admin/settings.php:1953
+#: admin/settings.php:1962
 msgid "Upload or select favicon from gallery"
 msgstr "Télécharger ou choisir une favicon dans une gallerie"
 
-#: admin/settings.php:1957
+#: admin/settings.php:1966
 msgid ""
 "Limitations: It has to be an image. It should be max 64x64 pixels in "
 "dimensions. Recommended file extensions .ico and .png . "
@@ -1989,7 +2005,7 @@ msgstr ""
 "Limitations: cela doit être une image. Elle doit avoir une taille maximum de "
 "64x64 pixels. L'extension recommandée est .ico ou .png."
 
-#: admin/settings.php:1965
+#: admin/settings.php:1974
 msgid ""
 "Insert your custom CSS here. Any CSS declarations made here will overwrite "
 "Mantra's (even the custom options specified right here in the Mantra "
@@ -2000,7 +2016,7 @@ msgstr ""
 "faite ici prévaudra sur celles du thème Mantra, y compris sur les "
 "déclarations issues du paramétrage du thème fait via cette page."
 
-#: admin/settings.php:1972
+#: admin/settings.php:1981
 msgid ""
 "Insert your custom Javascript code here. (Google Analytics and any other "
 "forms of Analytic software)."
@@ -2008,7 +2024,7 @@ msgstr ""
 "Insérer votre code JavaScript personalisé ici. (Google Analytics ou "
 "n'importe quel autre code d'un fournisseur)"
 
-#: admin/settings.php:1985
+#: admin/settings.php:1994
 msgid ""
 "Enable Mantra's Search Engine Optimization. This is enabled by default and "
 "should only be disabled if you are using a SEO plugin."
@@ -2017,11 +2033,11 @@ msgstr ""
 "active par défaut et ne devrait être supprimée que si vous utilisez une "
 "extension SEO."
 
-#: admin/settings.php:1997
+#: admin/settings.php:2006
 msgid "Auto"
 msgstr "Automatique"
 
-#: admin/settings.php:1997
+#: admin/settings.php:2006
 msgid "Manual"
 msgstr "Manuelle"
 
@@ -2045,68 +2061,72 @@ msgstr "(Modifier)"
 msgid "Pingback: "
 msgstr "Pingback:"
 
-#: includes/theme-comments.php:82
+#: includes/theme-comments.php:85
 msgid "Leave a comment"
 msgstr "Réagir"
 
-#: includes/theme-comments.php:82
+#: includes/theme-comments.php:85
 msgid "<b>1</b> Comment"
 msgstr "<b>1</b> Commentaire"
 
-#: includes/theme-comments.php:82
+#: includes/theme-comments.php:85
 msgid "<b>%</b> Comments"
 msgstr "<b>%</b> Commentaires"
 
-#: includes/theme-comments.php:90
+#: includes/theme-comments.php:94
 #, php-format
 msgid "One Response to %2$s"
 msgid_plural "%1$s Responses to %2$s"
 msgstr[0] "Une réaction à %2$s"
 msgstr[1] "%1$s réactions à  %2$s"
 
-#: includes/theme-comments.php:103
+#: includes/theme-comments.php:107
 msgid "Older Comments"
 msgstr "Commentaires antérieurs"
 
-#: includes/theme-comments.php:104
+#: includes/theme-comments.php:108
 msgid "Newer Comments"
 msgstr "Commentaires plus récents"
 
-#: includes/theme-functions.php:218
+#: includes/theme-functions.php:237
 msgid "Home Page"
 msgstr "Page d'accueil"
 
-#: includes/theme-functions.php:283
+#: includes/theme-functions.php:301
+msgid "Powered by"
+msgstr "Founit par"
+
+#: includes/theme-functions.php:303
 msgid "Semantic Personal Publishing Platform"
 msgstr "Semantic Personal Publishing Platform"
 
-#: includes/theme-loop.php:143
+#: includes/theme-loop.php:145
 msgid "By "
 msgstr "De"
 
-#: includes/theme-loop.php:171
+#: includes/theme-loop.php:185
 msgid " Bookmark the "
 msgstr "Lien pour marque-pages : "
 
-#: includes/theme-loop.php:171 includes/theme-loop.php:173
-#: includes/theme-loop.php:175
+#: includes/theme-loop.php:185 includes/theme-loop.php:187
+#: includes/theme-loop.php:189
 msgid "Permalink to"
 msgstr "Permalien vers"
 
-#: includes/theme-loop.php:171 includes/theme-loop.php:173
-#: includes/theme-loop.php:175
+#: includes/theme-loop.php:185 includes/theme-loop.php:187
+#: includes/theme-loop.php:189
 msgid "permalink"
 msgstr "permalien"
 
-#: includes/theme-loop.php:173 includes/theme-loop.php:175
+#: includes/theme-loop.php:187 includes/theme-loop.php:189
 msgid "Bookmark the "
 msgstr "Pour marque-pages : "
 
-#: includes/theme-loop.php:197
+#: includes/theme-loop.php:211
 msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&laquo;</span> Articles antérieurs"
 
-#: includes/theme-loop.php:198
+#: includes/theme-loop.php:212
 msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
 msgstr "Articles postérieurs <span class=\"meta-nav\">&raquo;</span>"
 
@@ -2115,89 +2135,111 @@ msgstr "Articles postérieurs <span class=\"meta-nav\">&raquo;</span>"
 msgid "Page %s"
 msgstr "Page %s"
 
-#: includes/theme-setup.php:91
+#: includes/theme-setup.php:90
 msgid "Primary Navigation"
 msgstr "Navigation principale"
 
-#: includes/theme-setup.php:92
+#: includes/theme-setup.php:91
 msgid "Top Navigation"
 msgstr "Navigation haut de page"
 
-#: includes/theme-setup.php:93
+#: includes/theme-setup.php:92
 msgid "Footer Navigation"
 msgstr "Navigation bas de page"
 
-#: includes/theme-setup.php:137
+#: includes/theme-setup.php:139
 msgid "mantra"
 msgstr "mantra"
 
-#: includes/theme-setup.php:198
+#: includes/theme-setup.php:200
 msgid "Skip to content"
 msgstr "Passer directement au contenu"
 
-#: includes/theme-setup.php:224
+#: includes/theme-setup.php:227
 msgid "Primary Widget Area - Sidebar 1"
 msgstr "Zone widget primaire - Volet 1"
 
-#: includes/theme-setup.php:226
+#: includes/theme-setup.php:229
 msgid "Primary widget area - Sidebar 1"
 msgstr "Zone widget N°1 - Volet 1"
 
-#: includes/theme-setup.php:235
+#: includes/theme-setup.php:238
 msgid "Secondary Widget Area - Sidebar 1"
 msgstr "Zone widget secondaire - Volet 1"
 
-#: includes/theme-setup.php:237
+#: includes/theme-setup.php:240
 msgid "Secondary widget area - Sidebar 1"
 msgstr "Zone widget N°2 - Volet 1"
 
-#: includes/theme-setup.php:246
+#: includes/theme-setup.php:249
 msgid "Third Widget Area - Sidebar 2"
 msgstr "3ème zone widget - Volet 2"
 
-#: includes/theme-setup.php:248
+#: includes/theme-setup.php:251
 msgid "Third widget area - Sidebar 2"
 msgstr "Zone widget N°3 - Volet 2"
 
-#: includes/theme-setup.php:257
+#: includes/theme-setup.php:260
 msgid "Fourth Widget Area - Sidebar 2"
 msgstr "4ème zone widget - Volet 2"
 
-#: includes/theme-setup.php:259
+#: includes/theme-setup.php:262
 msgid "Fourth widget area  - Sidebar 2"
 msgstr "Zone widget N°4 - Volet 2"
 
-#: includes/theme-setup.php:268
+#: includes/theme-setup.php:271
 msgid "First Footer Widget Area"
 msgstr "1ère zone widget de bas de page"
 
-#: includes/theme-setup.php:270
+#: includes/theme-setup.php:273
 msgid "First footer widget area"
 msgstr "Zone widget de bas de page N°1"
 
-#: includes/theme-setup.php:279
+#: includes/theme-setup.php:282
 msgid "Second Footer Widget Area"
 msgstr "2ème zone widget de bas de page"
 
-#: includes/theme-setup.php:281
+#: includes/theme-setup.php:284
 msgid "Second footer widget area"
 msgstr "Zone widget de bas de page N°2"
 
-#: includes/theme-setup.php:290
+#: includes/theme-setup.php:293
 msgid "Third Footer Widget Area"
 msgstr "3ème zone widget de bas de page"
 
-#: includes/theme-setup.php:292
+#: includes/theme-setup.php:295
 msgid "The third footer widget area"
 msgstr "Zone widget de bas de page N°3"
 
-#: includes/theme-setup.php:301
+#: includes/theme-setup.php:304
 msgid "Fourth Footer Widget Area"
 msgstr "4ème zone widget de bas de page"
 
-#: includes/theme-setup.php:303
+#: includes/theme-setup.php:306
 msgid "The fourth footer widget area"
 msgstr "Zone widget de bas de page N°4"
+
+#: includes/theme-setup.php:315 includes/theme-setup.php:317
+msgid "Above content Widget Area"
+msgstr "Au dessus de la zone de Widget"
+
+#: includes/theme-setup.php:326 includes/theme-setup.php:328
+msgid "Below Content Widget Area"
+msgstr "En dessous de la zone de Widget"
+
+#~ msgid "Insert footer copyright"
+#~ msgstr "Insertion de copyright en bas de page"
+
+#~ msgid ""
+#~ "Enable the presentation front-page. This will become your new home page "
+#~ "and it will replace whatever page you have selected as homepage. It has a "
+#~ "slider and columns for presentation\n"
+#~ "\t\ttext and images."
+#~ msgstr ""
+#~ "Activer la page de présentation. Celle-ci devient alors la nouvelle page "
+#~ "d'accueil, remplaçant toute page sélectionnée comme telle auparavant. "
+#~ "Elle intègre un diaporama et plusieurs colonnes pour la mise en valeur de "
+#~ "textes et d'images."
 
 #~ msgid "Sorry - nothing to found."
 #~ msgstr "Désoler - rien à chercher."

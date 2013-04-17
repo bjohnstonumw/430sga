@@ -2,7 +2,7 @@
 * by the Catch Themes team, http://catchthemes.com/
 
 == ABOUT Catch Box==
-Catch Box is simple, lightweight, box shaped, and adaptable WordPress Theme for bloggers and professionals. It is based on HTML5, CSS3 and Responsive Web Design to view in various devices. 10 Best Reasons to use Catch Box Theme. 1. Responsive Web Design, 2. Custom Menus (Primary, Secondary and Footer menus), 3. Theme Options for light or dark or blue color scheme, custom link colors, three layout choices, two content choices between excerpt and content option in homepage, feed redirection, custom css styles, 4. Featured Sliders where you can define number of slides and post IDs, 5. Social Links (Facebook, Twitter, RSS, Linkedin, Pinterest, etc), 6. Webmaster Tools (Google, Yahoo and Bing site verification ID, Header and Footer codes), 7. Custom Backgrounds, 8. Custom Header, 9. Catchbox Adspace widget to add any type of Advertisements, and 10. Support popular plugins. Multilingual Ready (WPML) and also currently translated in Brazilian Portuguese, Spanish, Danish, Germany, French, Polish, Czech, Croatian and Italian. Free Support Forum at http://catchthemes.com/support-forum/forum/catch-box-public/
+Catch Box is simple, lightweight, box shaped, and adaptable WordPress Theme for bloggers and professionals. It is based on HTML5, CSS3 and Responsive Web Design to view in various devices. 10 Best Reasons to use Catch Box Theme. 1. Responsive Web Design, 2. Custom Menus (Primary, Secondary and Footer menus), 3. Theme Options for light or dark or blue color scheme, custom link colors, three layout choices, two content choices between excerpt and content option in homepage, feed redirection, custom css styles, 4. Featured Sliders where you can define number of slides and post IDs, 5. Social Links (Facebook, Twitter, RSS, Linkedin, Pinterest, etc), 6. Webmaster Tools (Google, Yahoo and Bing site verification ID, Header and Footer codes), 7. Custom Backgrounds, 8. Custom Header, 9. Catchbox Adspace widget to add any type of Advertisements, and 10. Support popular plugins. Multilingual Ready (WPML) and also currently translated in Brazilian Portuguese, Spanish, Danish, Germany, French, Polish, Czech, Croatian, Italian, Swedish and Russian. Free Support Forum at http://catchthemes.com/support-forum/forum/catch-box-public/
 
 == Translation ==
 Catch Box theme is translation ready. 
@@ -15,6 +15,8 @@ Added Translation for Polish by Piotr (fansitepoprostugry@gmail.com)
 Added Translation for Czech by Marek Přidal (m.pridal29@gmail.com)
 Added Translation for Croatian by Sanjin Barac (rapid24income@gmail.com)
 Added Translation for Italian by Lorenzo Bossi (lorenzobossi83@gmail.com)
+Added Translation for Swedish by Johnny Eriksson (info@johnnysblogg.se)
+Added Translation for Russian by XakRu (calvinxakru@gmail.com)
 
 == Menus ===
 There are 3 Menus registered in this theme. Primary, Secondary and Footer menu. 
@@ -224,3 +226,22 @@ Version 2.0.1
 
 Version 2.0.2
 * Deleted the extra css in dark.css and fixed chrome issue
+
+Version 2.0.3
+* Added webclip icon url option
+
+Version 2.1
+* Added Swedish translation sv_SE.po and sv_SE.mo 
+
+Version 2.1.1
+* Fixed author info color in Dark color scheme
+* Fixed Social Icon title for Vimeo and Flickr
+* Added Responsive menu support for default wp_page_menu 
+* Fixed Arrow on Responsive Menu
+* Removed simplecatch_sort_query_by_post_in function as post orderby is already implement in WordPress Version 3.5 by default
+
+Version 2.2
+* Added Russian translation ru_RU.po and ru_RU.mo
+* Added missing !function_exists() condition to support child theme easy editing
+* Added redirect to Theme Options upon theme activation
+

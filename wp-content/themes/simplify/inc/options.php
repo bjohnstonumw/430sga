@@ -20,7 +20,7 @@ function optionsframework_options() {
 		'type' => 'heading');
 	
 	$options[] = array(
-		'desc' => '<span class="donation">If you like this FREEE Theme You can consider for a small Donation to us. Your Donation will be spent for the Disadvantaged Children and Students. You can visit our <a href="http://d5creation.com/donate/" target="_blank"><strong>DONATION PAGE</strong></a> and Take your decision.</span><br /><br /><span class="donation"> Need Moor Features and Options? Try <a href="http://d5creation.com/theme/simplify/" target="_blank"><strong>Simplify Extend</strong></a>.</span><br /> <br /><span class="donation"> You can Visit the Simplify Extend Demo <a href="http://demo.d5creation.com/wp/themes/simplify/" target="_blank"><strong>Here</strong></a>.</span>',
+		'desc' => '<span class="donation">If you like this FREEE Theme You can consider for a small Donation to us. Your Donation will be spent for the Disadvantaged Children and Students. You can visit our <a href="http://d5creation.com/donate/" target="_blank"><strong>DONATION PAGE</strong></a> and Take your decision.</span><br /><br /><span class="donation"> Need More Features and Options including Exciting 3D Slide and 100+ Advanced Features? Try <a href="http://d5creation.com/theme/simplify/" target="_blank"><strong>Simplify Extend</strong></a>.</span><br /> <br /><span class="donation"> You can Visit the Simplify Extend Demo <a href="http://demo.d5creation.com/wp/themes/simplify/" target="_blank"><strong>Here</strong></a>.</span>',
 		'type' => 'info');
 	
 	$options[] = array(
@@ -101,8 +101,22 @@ function optionsframework_options() {
 		'id' => 'featured-description' . $fbsinumber,
 		'std' => 'The Color changing options of Simplify will give the WordPress Driven Site an attractive look. Simplify is super elegant and Professional Responsive Theme which will create the business widely expressed.',
 		'type' => 'textarea');
-		
+	
 	}
+
+	$options[] = array(
+		'name' => 'Do not show any Posts or Page in the Front Page ', 
+		'desc' => 'Check the Box if you do not want to show any Posts or Page in the Front Page', 
+		'id' => 'fpost',
+		'std' => '0',
+		'type' => 'checkbox');
+	
+	$options[] = array(
+		'name' => 'Use Responsive Layout', 
+		'desc' => 'Check the Box if you want the Responsive Layout of your Website', 
+		'id' => 'responsive',
+		'std' => '0',
+		'type' => 'checkbox');
 	
 	return $options;
 }

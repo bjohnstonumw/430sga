@@ -53,7 +53,11 @@
 							"GooglePlus" , "Instagram", "LastFM", "LinkedIn", "Mail", "MySpace", "Picasa","Pinterest", "Reddit",
 							"RSS", "Skype", "SoundCloud", "StumbleUpon", "Technorati","Tumblr", "Twitter", "Vimeo",
 							"WordPress", "Yahoo", "YouTube" );
+							
+							
 
+
+if (!function_exists ('ma_options_validate') ) :
 /*
  *
  * Validate user data
@@ -94,14 +98,16 @@ global $mantra_defaults;
 
 	$input['mantra_fwidth'] =  intval(wp_kses_data($input['mantra_fwidth']));
 	$input['mantra_fheight'] =  intval(wp_kses_data($input['mantra_fheight']));
-
-	$input['mantra_social2'] =  esc_url_raw($input['mantra_social2']);
-	$input['mantra_social4'] =  esc_url_raw($input['mantra_social4']);
-	$input['mantra_social6'] =  esc_url_raw($input['mantra_social6']);
-	$input['mantra_social8'] =  esc_url_raw($input['mantra_social8']);
-	$input['mantra_social10'] = esc_url_raw($input['mantra_social10']);
+	
+	for ($i=1;$i<10;$i+=2) {
+		$j=$i+1;
+		$input['mantra_social'.$j] =  esc_url_raw(($input['mantra_social'.$i]=='Mail'?'mailto:':'').$input['mantra_social'.$j]);
+	}
 
 	$input['mantra_favicon'] =  esc_url_raw($input['mantra_favicon']);
+	$input['mantra_headerupload'] =  esc_url_raw($input['mantra_headerupload']);
+	$input['mantra_headermargin'] =  intval(wp_kses_data($input['mantra_headermargin']));
+	
 	$input['mantra_customcss'] =  wp_kses_post(trim($input['mantra_customcss']));
 	$input['mantra_customjs'] =  wp_kses_post(trim($input['mantra_customjs']));
 	$input['mantra_seo_home_desc'] =  wp_kses_post(trim($input['mantra_seo_home_desc']));
@@ -201,4 +207,6 @@ global $mantra_defaults;
 	return $input; // return validated input
 
 }
+
+endif;
 ?>

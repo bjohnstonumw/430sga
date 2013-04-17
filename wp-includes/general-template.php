@@ -186,7 +186,7 @@ function get_search_form($echo = true) {
  */
 function wp_loginout($redirect = '', $echo = true) {
 	if ( ! is_user_logged_in() )
-		$link = '<a href="' . esc_url( wp_login_url($redirect) ) . '">' . __('Log in') . '</a>';
+		$link = '<a href="' . esc_url( wp_login_url($redirect) ) . '">' . __('Log in / Register') . '</a>';
 	else
 		$link = '<a href="' . esc_url( wp_logout_url($redirect) ) . '">' . __('Log out') . '</a>';
 

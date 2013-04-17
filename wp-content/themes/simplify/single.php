@@ -1,7 +1,7 @@
 <?php
 
 /* 	Simplify Theme's Single Page to display Single Page or Post
-	Copyright: 2012, D5 Creation, www.d5creation.com
+	Copyright: 2012-2013, D5 Creation, www.d5creation.com
 	Based on the Simplest D5 Framework for WordPress
 	Since Simplify 1.0
 */
@@ -36,7 +36,7 @@ get_header(); ?>
           	            
           <!-- End the Loop. -->          
         	
-			<?php comments_template('', true); ?>
+			<?php comments_template(); ?>
             
 </div>			
 <?php get_sidebar(); ?>

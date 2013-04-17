@@ -11,9 +11,13 @@ Template Name: Category page with intro
 			<div id="content" role="main">
 
 	 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="entry-content">
 		<?php the_content(); ?>
+		</div>
 	<div style="clear: both;"></div>
+	</div>
 	<?php endwhile; else: endif; ?>
 	<br /><br />
 	<?php $slug = basename(get_permalink());

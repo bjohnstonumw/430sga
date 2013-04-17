@@ -9,7 +9,7 @@ $options = get_option('admired_theme_options');
 	<div class="admired-social">
 
 		<ul class="admired-social">
-
+			
 			<?php // Pinterest
 			if ( isset ($options['admired_pinterest_id']) &&  ($options['admired_pinterest_id']!="") ) {
 				$output = '<li><a target="_blank" href="http://pinterest.com/'."";

@@ -1,6 +1,6 @@
 <?php
 /* 	Simplify Theme's General Page to display all Pages
-	Copyright: 2012, D5 Creation, www.d5creation.com
+	Copyright: 2012-2013, D5 Creation, www.d5creation.com
 	Based on the Simplest D5 Framework for WordPress
 	Since Simplify 1.0
 */
@@ -23,7 +23,7 @@
 		</div>
 		<?php endwhile; ?><div class="clear"> </div>
 	<?php edit_post_link('Edit This Entry', '<p>', '</p>'); ?>
-<?php comments_template('', true); ?>
+<?php comments_template(); ?>
 	<?php else: ?>
 		<p>Sorry, no pages matched your criteria.</p>
 	<?php endif; ?>

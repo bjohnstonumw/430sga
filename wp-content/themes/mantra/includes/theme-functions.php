@@ -36,15 +36,9 @@ function makeDoubleDelegate(function1, function2) {
 }
 
 function mantra_onload() {
-     // Add custom borders to images
-     jQuery("img.alignnone, img.alignleft, img.aligncenter,  img.alignright").addClass("<?php echo 'image'.$mantra_image;?>");
+    
 <?php if ($mantra_mobile=="Enable") { // If mobile view is enabled ?>
-	jQuery(function () {
-	// Add select navigation to small screens
-     jQuery("#access .menu ul:first-child").tinyNav({
-          	header: false // Show header instead of the active item
-			});
-	});
+
      // Add responsive videos
      if (jQuery(window).width() < 800) jQuery(".entry-content").fitVids();
 <?php }
@@ -52,6 +46,19 @@ if (($mantra_s1bg || $mantra_s2bg) ) { ?>
      // Check if sidebars have user colors and if so equalize their heights
      equalizeHeights();<?php } ?>
 }; // mantra_onload
+
+
+jQuery(document).ready(function(){
+     // Add custom borders to images
+     jQuery("img.alignnone, img.alignleft, img.aligncenter,  img.alignright").addClass("<?php echo 'image'.$mantra_image;?>");
+<?php if ($mantra_mobile=="Enable") { // If mobile view is enabled ?>
+
+	// Add select navigation to small screens
+     jQuery("#access .menu ul:first-child").tinyNav({
+          	header: false // Show header instead of the active item
+			});
+<?php } ?>
+});
 
 // make sure not to lose previous onload events
 window.onload = makeDoubleDelegate(window.onload, mantra_onload );
@@ -61,33 +68,68 @@ window.onload = makeDoubleDelegate(window.onload, mantra_onload );
 
 add_action('wp_head','mantra_header_scripts',100);
 
-
-/**
- * Creates invisible div over header making it link to home page
- * Used in header.php
-*/
- function mantra_link_header() {
-echo '<a href="'.home_url( '/' ).'" id="linky"> </a>' ;
-
-}
-
-
-if ($mantra_options['mantra_linkheader']=="Enable") add_action('cryout_branding_hook','mantra_link_header');
-
-
-
  /**
  * Adds title and description to heaer
  * Used in header.php
 */
  function mantra_title_and_description() {
- // Site Title
-  $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div';
-  echo '<'.$heading_tag.' id="site-title">';
-  echo '<span> <a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a> </span>';
-  echo '</'.$heading_tag.'>';
-  // Site Description
-  echo '<div id="site-description" >'.get_bloginfo( 'description' ).'</div>';
+  $mantra_options= mantra_get_theme_options();
+foreach ($mantra_options as $key => $value) {
+     ${"$key"} = $value ;
+}
+// Header styling and image loading
+// Check if this is a post or page, if it has a thumbnail, and if it's a big one
+global $post;
+
+	if (get_header_image() != '') { $himgsrc=get_header_image(); }
+	if ( is_singular() && has_post_thumbnail( $post->ID ) && $mantra_fheader == "Enable" &&
+		( $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ) ) &&
+		$image[1] >= HEADER_IMAGE_WIDTH ) : $himgsrc= $image[0];
+	endif;
+ 
+ 
+ if (isset($himgsrc)) : echo '<img id="bg_image" alt="" title="" src="'.$himgsrc.'"  />';  endif;
+
+?>
+
+ <div id="header-container">
+
+ 
+ <?php
+ $mantra_options= mantra_get_theme_options();
+foreach ($mantra_options as $key => $value) {
+     ${"$key"} = $value ;
+}
+ 
+ switch ($mantra_siteheader) {
+ 
+	case 'Site Title and Description':
+		echo '<div>';
+		$heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div';
+		echo '<'.$heading_tag.' id="site-title">';
+		echo '<span> <a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a> </span>';
+		echo '</'.$heading_tag.'>';
+		echo '<div id="site-description" >'.get_bloginfo( 'description' ).'</div></div>'; 
+	break;
+	
+	case 'Clickable header image' :
+	
+		echo '<a style="display:block;width:100%;height:100%;" href="'.home_url( '/' ).'" id="linky"> </a>' ;
+	break;
+	
+	case 'Custom Logo' :
+	echo '<div><a id="logo" href="/" ><img title="" alt="" src="'.$mantra_logoupload.'" /></a></div>';
+	
+	break;
+	
+	case 'Empty' :
+	
+	break;
+	
+}
+  
+  if($mantra_socialsdisplay0) mantra_header_socials();
+  echo '</div>';
 }
 
 
@@ -113,7 +155,7 @@ add_action ('cryout_branding_hook','mantra_title_and_description');
  mantra_set_social_icons('sfooter');
  }
 
-if($mantra_socialsdisplay0) add_action('cryout_branding_hook', 'mantra_header_socials');
+//if($mantra_socialsdisplay0) add_action('cryout_branding_hook', 'mantra_header_socials');
 if($mantra_socialsdisplay1) add_action('cryout_forbottom_hook', 'mantra_smenul_socials');
 if($mantra_socialsdisplay2) add_action('cryout_forbottom_hook', 'mantra_smenur_socials');
 if($mantra_socialsdisplay3) add_action('cryout_footer_hook', 'mantra_footer_socials',13);
@@ -154,6 +196,9 @@ else { $mantra_theme_info = wp_get_theme( );}
  * Replaces header image with featured image if there is one for single pages
  * Used in header.php
 */
+
+/* // Moved to custom-styles.php
+
 function mantra_header_featured_image() {
 global $post;
 global $mantra_options;
@@ -171,8 +216,8 @@ endif;
 }
 
 
-add_action ('cryout_branding_hook','mantra_header_featured_image');
 
+*/
 
 /**
  * Mantra back to top button

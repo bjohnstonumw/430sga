@@ -14,8 +14,10 @@ get_header(); ?>
 
 					<?php get_template_part( 'loop', 'page' ); ?>
 
-					<?php if ( comments_open()):
-					comments_template( '', true ); 
+					<?php 
+
+					if ( comments_open()):
+						comments_template( '', true ); 
 					endif; ?>
 				<?php endwhile; // end of the loop. ?>
 			</div><!-- #content -->

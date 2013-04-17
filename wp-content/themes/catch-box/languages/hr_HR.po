@@ -4,19 +4,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Catch Box\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-31 21:59+0530\n"
-"PO-Revision-Date: 2013-02-10 15:56+0100\n"
-"Last-Translator: Sanjin Barac <update.soft.sanjin@gmail.com>\n"
+"POT-Creation-Date: 2013-04-11 17:35+0545\n"
+"PO-Revision-Date: 2013-04-11 17:35+0545\n"
+"Last-Translator: Sakin Shrestha <sakin@catchinternet.com>\n"
 "Language-Team: Catch Themes <info@catchinternet.com>\n"
+"Language: Croatian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;esc_attr_e;esc_attr__\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;esc_attr_e;esc_attr__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: Croatian\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:14
@@ -62,6 +62,7 @@ msgid "Monthly Archives: %s"
 msgstr "Mjesečna arhiva: %s"
 
 #: ../archive.php:24
+msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
@@ -71,6 +72,7 @@ msgid "Yearly Archives: %s"
 msgstr "Godišnja arhiva: %s"
 
 #: ../archive.php:26
+msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
@@ -78,11 +80,13 @@ msgstr "Y"
 msgid "Blog Archives"
 msgstr "Blog arhiva"
 
-#: ../archive.php:52 ../author.php:69 ../category.php:45
+#: ../archive.php:52 ../author.php:69 ../category.php:45 ../index.php:32
+#: ../search.php:39 ../tag.php:45
 msgid "Nothing Found"
 msgstr "Ništa nije pronađeno"
 
-#: ../archive.php:56 ../author.php:73 ../category.php:49
+#: ../archive.php:56 ../author.php:73 ../category.php:49 ../index.php:36
+#: ../tag.php:49
 msgid ""
 "Apologies, but no results were found for the requested archive. Perhaps "
 "searching will help find a related post."
@@ -137,7 +141,7 @@ msgstr "Komentari su zatvoreni."
 #: ../content-aside.php:16 ../content-featured.php:14
 #: ../content-gallery.php:16 ../content-gallery.php:48 ../content-image.php:15
 #: ../content-link.php:16 ../content-quote.php:14 ../content-status.php:15
-#: ../content.php:15 ../content.php:19 ../content.php:46
+#: ../content.php:15 ../content.php:19 ../content.php:47 ../functions.php:793
 #, php-format
 msgid "Permalink to %s"
 msgstr "Permalink za %s"
@@ -153,57 +157,60 @@ msgstr "Odgovor"
 
 #: ../content-aside.php:22 ../content-image.php:21 ../content-link.php:22
 #: ../content-quote.php:24 ../content-status.php:21
+msgctxt "comments number"
 msgid "1"
 msgstr "1"
 
 #: ../content-aside.php:22 ../content-image.php:21 ../content-link.php:22
 #: ../content-quote.php:24 ../content-status.php:21
+msgctxt "comments number"
 msgid "%"
 msgstr "%"
 
 #: ../content-aside.php:33 ../content-gallery.php:32 ../content-image.php:27
 #: ../content-link.php:33 ../content-quote.php:35 ../content-status.php:34
-#: ../content.php:54
+#: ../content.php:55 ../functions.php:386
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Nastaviti čitanje <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../content-aside.php:35 ../content-featured.php:24
 #: ../content-gallery.php:55 ../content-image.php:29 ../content-link.php:35
 #: ../content-page.php:19 ../content-quote.php:37 ../content-single.php:31
-#: ../content-status.php:36 ../content.php:56
+#: ../content-status.php:36 ../content.php:57 ../image.php:87
 msgid "Pages:"
 msgstr "Stranice:"
 
 #: ../content-aside.php:48 ../content-gallery.php:93 ../content-image.php:70
 #: ../content-link.php:48 ../content-quote.php:75 ../content-status.php:49
-#: ../content.php:96
+#: ../content.php:97
 msgid "Leave a reply"
 msgstr "Ostavite odgovor"
 
 #: ../content-aside.php:48 ../content-gallery.php:93 ../content-image.php:70
 #: ../content-link.php:48 ../content-quote.php:75 ../content-status.php:49
-#: ../content.php:96
+#: ../content.php:97
 msgid "<b>1</b> Reply"
 msgstr "<b>1</b> Odgovor"
 
 #: ../content-aside.php:48 ../content-gallery.php:93 ../content-image.php:70
 #: ../content-link.php:48 ../content-quote.php:75 ../content-status.php:49
-#: ../content.php:96
+#: ../content.php:97
 msgid "<b>%</b> Replies"
 msgstr "<b>%</b> Odgovora"
 
 #: ../content-aside.php:50 ../content-featured.php:51
 #: ../content-gallery.php:96 ../content-image.php:74 ../content-link.php:50
 #: ../content-page.php:27 ../content-quote.php:78 ../content-single.php:64
-#: ../content-status.php:51 ../content.php:99
+#: ../content-status.php:51 ../content.php:100 ../functions.php:590
+#: ../functions.php:618 ../image.php:97
 msgid "Edit"
 msgstr "Uredi"
 
 #: ../content-featured.php:35 ../content-featured.php:44
 #: ../content-gallery.php:68 ../content-gallery.php:78 ../content-image.php:53
 #: ../content-image.php:62 ../content-quote.php:50 ../content-quote.php:60
-#: ../content-single.php:42 ../content-single.php:45 ../content.php:70
-#: ../content.php:80
+#: ../content-single.php:42 ../content-single.php:45 ../content.php:71
+#: ../content.php:81
 msgid ", "
 msgstr ", "
 
@@ -232,16 +239,18 @@ msgstr "Galerija"
 #: ../content-gallery.php:47
 #, php-format
 msgid "This gallery contains <a %1$s>%2$s photo</a>."
-msgstr "Ova galerija sadrži <a %1$s>%2$s fotografija</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Ova galerija sadrži <a %1$s>%2$s fotografija</a>."
+msgstr[1] "Ova galerija sadrži <a %1$s>%2$s fotografija</a>."
 
 #: ../content-gallery.php:72 ../content-image.php:57 ../content-quote.php:54
-#: ../content.php:74
+#: ../content.php:75
 #, php-format
 msgid "<span class=\"%1$s\">Posted in</span> %2$s"
 msgstr "<span class=\"%1$s\">Objavljeno u</span> %2$s"
 
 #: ../content-gallery.php:84 ../content-image.php:65 ../content-quote.php:66
-#: ../content.php:86
+#: ../content.php:87
 #, php-format
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
 msgstr "<span class=\"%1$s\">Označeno</span> %2$s"
@@ -263,7 +272,7 @@ msgstr ""
 "</span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" "
 "title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
 
-#: ../content-image.php:45
+#: ../content-image.php:45 ../functions.php:656
 #, php-format
 msgid "View all posts by %s"
 msgstr "Vidi sve objave od %s"
@@ -355,7 +364,8 @@ msgstr "Pokretano od WordPress"
 msgid "Powered by %s"
 msgstr "Pokretano od %s"
 
-#: ../footer.php:40
+#: ../footer.php:40 ../inc/theme-options.php:621 ../inc/theme-options.php:672
+#: ../inc/theme-options.php:784 ../inc/theme-options.php:908
 msgid "http://catchthemes.com/"
 msgstr "http://catchthemes.com/"
 
@@ -392,66 +402,66 @@ msgstr "Cvijet"
 msgid "Mountain"
 msgstr "Planina"
 
-#: ../functions.php:347
+#: ../functions.php:357
 #, php-format
 msgid "Page %s"
 msgstr "Stranica %s"
 
-#: ../functions.php:422
+#: ../functions.php:455
 msgid "Main Sidebar"
 msgstr "Glavna bočna traka"
 
-#: ../functions.php:431
+#: ../functions.php:464
 msgid "Footer Area One"
 msgstr "Podnožje prvi dio"
 
-#: ../functions.php:433 ../functions.php:443 ../functions.php:453
+#: ../functions.php:466 ../functions.php:476 ../functions.php:486
 msgid "An optional widget area for your site footer"
 msgstr "Neobavezni dodatak za podnožje vaše stranice"
 
-#: ../functions.php:441
+#: ../functions.php:474
 msgid "Footer Area Two"
 msgstr "Podnožje drugi dio"
 
-#: ../functions.php:451
+#: ../functions.php:484
 msgid "Footer Area Three"
 msgstr "Podnožje treći dio"
 
-#: ../functions.php:471 ../single.php:15
+#: ../functions.php:505 ../single.php:15
 msgid "Post navigation"
 msgstr "Navigacija objava"
 
-#: ../functions.php:479
+#: ../functions.php:513
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Starije objave"
 
-#: ../functions.php:480
+#: ../functions.php:514
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Novije objave <span class=\"meta-nav\">&rarr;</span>"
 
-#: ../functions.php:553
+#: ../functions.php:590
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: ../functions.php:570
+#: ../functions.php:607
 #, php-format
 msgid "%1$s on %2$s <span class=\"says\">said:</span>"
 msgstr "%1$s na %2$s <span class=\"says\">kaže:</span>"
 
-#: ../functions.php:576
+#: ../functions.php:613
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s u %2$s"
 
-#: ../functions.php:585
+#: ../functions.php:622
 msgid "Your comment is awaiting moderation."
 msgstr "Vaš komentar čeka moderiranje."
 
-#: ../functions.php:594
+#: ../functions.php:631
 msgid "Reply <span>&darr;</span>"
 msgstr "Odgovori <span>&darr;</span>"
 
-#: ../functions.php:613
+#: ../functions.php:650
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
@@ -466,15 +476,15 @@ msgstr ""
 "<span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s"
 "\" rel=\"author\">%7$s</a></span></span>"
 
-#: ../functions.php:668
+#: ../functions.php:705
 msgid "ID"
 msgstr "ID"
 
-#: ../functions.php:878
+#: ../functions.php:899
 msgid "Name"
 msgstr "Ime"
 
-#: ../functions.php:880
+#: ../functions.php:901
 msgid "Email"
 msgstr "Email"
 
@@ -563,54 +573,58 @@ msgid "Favicon URL"
 msgstr "Favicon URL"
 
 #: ../inc/theme-options.php:95
+msgid "Web Clip Icon URL"
+msgstr "Web Clip Icon URL"
+
+#: ../inc/theme-options.php:104
 msgid "Color Scheme"
 msgstr "Shema boja"
 
-#: ../inc/theme-options.php:103
+#: ../inc/theme-options.php:112
 msgid "Link Color"
 msgstr "Boja linka"
 
-#: ../inc/theme-options.php:111
+#: ../inc/theme-options.php:120
 msgid "Default Layout"
 msgstr "Zadani izgled"
 
-#: ../inc/theme-options.php:119
+#: ../inc/theme-options.php:128
 msgid "Content layout"
 msgstr "Izgled sadržaja"
 
-#: ../inc/theme-options.php:127
+#: ../inc/theme-options.php:136
 msgid "Excerpt Length in Words"
 msgstr "Izvadak, broj riječi"
 
-#: ../inc/theme-options.php:135
+#: ../inc/theme-options.php:144
 msgid "Feed Redirect URL"
 msgstr "Feed URL za preusmjeravanje"
 
-#: ../inc/theme-options.php:143
+#: ../inc/theme-options.php:152
 msgid "Disable Search in Header"
 msgstr "Onemogući traženje u zaglavlju"
 
-#: ../inc/theme-options.php:151
+#: ../inc/theme-options.php:160
 msgid "Custom CSS Styles"
 msgstr "Custom CSS stil"
 
-#: ../inc/theme-options.php:188 ../inc/theme-options.php:189
+#: ../inc/theme-options.php:197 ../inc/theme-options.php:198
 msgid "Theme Options"
 msgstr "Opcije teme"
 
-#: ../inc/theme-options.php:196 ../inc/theme-options.php:197
+#: ../inc/theme-options.php:205 ../inc/theme-options.php:206
 msgid "Featured Slider"
 msgstr "Istaknuti slajder"
 
-#: ../inc/theme-options.php:204 ../inc/theme-options.php:205
+#: ../inc/theme-options.php:213 ../inc/theme-options.php:214
 msgid "Social Links"
 msgstr "Društveni linkovi"
 
-#: ../inc/theme-options.php:212 ../inc/theme-options.php:213
+#: ../inc/theme-options.php:221 ../inc/theme-options.php:222
 msgid "Webmaster Tools"
 msgstr "Webmaster alati"
 
-#: ../inc/theme-options.php:230
+#: ../inc/theme-options.php:239
 msgid ""
 "Some themes provide customization options that are grouped together on a "
 "Theme Options screen. If you change themes, options may change or disappear, "
@@ -622,7 +636,7 @@ msgstr ""
 "jer one su specifične za temu. Vaša trenutna tema, Catch Box, pruža sljedeće "
 "Opcije Teme:"
 
-#: ../inc/theme-options.php:232 ../inc/theme-options.php:262
+#: ../inc/theme-options.php:241 ../inc/theme-options.php:271
 msgid ""
 "<strong>Color Scheme</strong>: You can choose a color palette of \"Light"
 "\" (light background with dark text) or \"Dark\" (dark background with light "
@@ -632,7 +646,7 @@ msgstr ""
 "\" (svjetla pozadina sa tamnim tekstom) ili \"Tamno\" (tamna pozadina sa "
 "svjetlim tekstom) za vašu stranicu."
 
-#: ../inc/theme-options.php:233 ../inc/theme-options.php:263
+#: ../inc/theme-options.php:242 ../inc/theme-options.php:272
 msgid ""
 "<strong>Link Color</strong>: You can choose the color used for text links on "
 "your site. You can enter the HTML color or hex code, or you can choose "
@@ -644,7 +658,7 @@ msgstr ""
 "možete odabrati vizualno tako što ćete kliknuti na \"Odaberi Boju\" dugne da "
 "odaberete iz kotača s bojama."
 
-#: ../inc/theme-options.php:234 ../inc/theme-options.php:264
+#: ../inc/theme-options.php:243 ../inc/theme-options.php:273
 msgid ""
 "<strong>Default Layout</strong>: You can choose if you want your site&#8217;"
 "s default layout to have a sidebar on the left, the right, or not at all."
@@ -653,7 +667,7 @@ msgstr ""
 "stranice&#8217;s sa bočnom trakom na lijevoj strani, na desnoj strani, ili "
 "bez bočne trake."
 
-#: ../inc/theme-options.php:236 ../inc/theme-options.php:266
+#: ../inc/theme-options.php:245 ../inc/theme-options.php:275
 msgid ""
 "Remember to click \"Save Changes\" to save any changes you have made to the "
 "theme options."
@@ -661,11 +675,11 @@ msgstr ""
 "Ne zaboravite kliknuti na \"Spremi Promjene\" da spremite postavke koje ste "
 "napravili u Opcijama Teme."
 
-#: ../inc/theme-options.php:238
+#: ../inc/theme-options.php:247
 msgid "For more information:"
 msgstr "Za više informacija:"
 
-#: ../inc/theme-options.php:239
+#: ../inc/theme-options.php:248
 msgid ""
 "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
 "target=\"_blank\">Documentation on Theme Options</a>"
@@ -673,7 +687,7 @@ msgstr ""
 "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
 "target=\"_blank\">Dokumentacija o Opcijama Teme</a>"
 
-#: ../inc/theme-options.php:240
+#: ../inc/theme-options.php:249
 msgid ""
 "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</"
 "a>"
@@ -681,11 +695,11 @@ msgstr ""
 "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Forum za "
 "podršku</a>"
 
-#: ../inc/theme-options.php:247 ../inc/theme-options.php:273
+#: ../inc/theme-options.php:256 ../inc/theme-options.php:282
 msgid "Overview"
 msgstr "Pregled"
 
-#: ../inc/theme-options.php:260
+#: ../inc/theme-options.php:269
 msgid ""
 "Slider Some themes provide customization options that are grouped together "
 "on a Theme Options screen. If you change themes, options may change or "
@@ -697,152 +711,156 @@ msgstr ""
 "nestati, jer teme su specifične. Vaša trenutna tema, Catch Box, omogućava "
 "sljedeće Opcije Teme:"
 
-#: ../inc/theme-options.php:291
+#: ../inc/theme-options.php:300
 msgid "Add/Change Favicon"
 msgstr "Dodaj/Promjeni Favicon"
 
-#: ../inc/theme-options.php:305
+#: ../inc/theme-options.php:314
+msgid "Add/Change Web Clip Icon"
+msgstr "Dodaj/Promjeni Web Clip Icon"
+
+#: ../inc/theme-options.php:328
 msgid "Light"
 msgstr "Svjetlo"
 
-#: ../inc/theme-options.php:311
+#: ../inc/theme-options.php:334
 msgid "Dark"
 msgstr "Tamno"
 
-#: ../inc/theme-options.php:317
+#: ../inc/theme-options.php:340
 msgid "Blue"
 msgstr "Plavo"
 
-#: ../inc/theme-options.php:336
+#: ../inc/theme-options.php:359
 msgid "Content on left"
 msgstr "Sadržaj na lijevo"
 
-#: ../inc/theme-options.php:341
+#: ../inc/theme-options.php:364
 msgid "Content on right"
 msgstr "Sadržaj na desno"
 
-#: ../inc/theme-options.php:346
+#: ../inc/theme-options.php:369
 msgid "One-column, no sidebar"
 msgstr "Jedan stupac, bez bočne trake"
 
-#: ../inc/theme-options.php:364
+#: ../inc/theme-options.php:387
 msgid "Show excerpt"
 msgstr "Prikaži izvadak"
 
-#: ../inc/theme-options.php:369
+#: ../inc/theme-options.php:392
 msgid "Show full content"
 msgstr "Prikaži cijeli sadržaj"
 
-#: ../inc/theme-options.php:467
+#: ../inc/theme-options.php:490
 msgid "Select a Color"
 msgstr "Odaberi boju"
 
-#: ../inc/theme-options.php:470
+#: ../inc/theme-options.php:493
 #, php-format
 msgid "Default color: %s"
 msgstr "Zadana boja: %s"
 
-#: ../inc/theme-options.php:528
+#: ../inc/theme-options.php:551
 msgid "CSS Tutorial from W3Schools."
 msgstr "CSS Tutorijal od W3Schools."
 
-#: ../inc/theme-options.php:528
+#: ../inc/theme-options.php:551
 msgid "http://www.w3schools.com/css/default.asp"
 msgstr "http://www.w3schools.com/css/default.asp"
 
-#: ../inc/theme-options.php:528
+#: ../inc/theme-options.php:551
 msgid "CSS Tutorial"
 msgstr "CSS Tutorijal"
 
-#: ../inc/theme-options.php:528
+#: ../inc/theme-options.php:551
 msgid "Click Here to Read"
 msgstr "Kliknite ovdje da pročitate"
 
-#: ../inc/theme-options.php:593 ../inc/theme-options.php:595
-#: ../inc/theme-options.php:644 ../inc/theme-options.php:646
-#: ../inc/theme-options.php:757 ../inc/theme-options.php:759
-#: ../inc/theme-options.php:880 ../inc/theme-options.php:882
+#: ../inc/theme-options.php:616 ../inc/theme-options.php:618
+#: ../inc/theme-options.php:667 ../inc/theme-options.php:669
+#: ../inc/theme-options.php:780 ../inc/theme-options.php:782
+#: ../inc/theme-options.php:903 ../inc/theme-options.php:905
 #, php-format
 msgid "%s Theme Options By"
 msgstr "%s Opcije Teme od"
 
-#: ../inc/theme-options.php:598 ../inc/theme-options.php:649
-#: ../inc/theme-options.php:761 ../inc/theme-options.php:885
+#: ../inc/theme-options.php:621 ../inc/theme-options.php:672
+#: ../inc/theme-options.php:784 ../inc/theme-options.php:908
 msgid "Catch Themes"
 msgstr "Catch Themes"
 
-#: ../inc/theme-options.php:602
+#: ../inc/theme-options.php:625
 msgid "http://catchthemes.com/support/"
 msgstr "http://catchthemes.com/support/"
 
-#: ../inc/theme-options.php:602 ../inc/theme-options.php:603
+#: ../inc/theme-options.php:625 ../inc/theme-options.php:626
 msgid "Theme Support"
 msgstr "Podrška za temu"
 
-#: ../inc/theme-options.php:605
+#: ../inc/theme-options.php:628
 msgid "http://catchthemes.com/themes/catch-box-pro/"
 msgstr "http://catchthemes.com/themes/catch-box-pro/"
 
-#: ../inc/theme-options.php:605 ../inc/theme-options.php:606
+#: ../inc/theme-options.php:628 ../inc/theme-options.php:629
 msgid "Upgrade to Catch Box Pro"
 msgstr "Nadogradnja u Catch Box Pro"
 
-#: ../inc/theme-options.php:608
+#: ../inc/theme-options.php:631
 msgid "http://facebook.com/catchthemes"
 msgstr "http://facebook.com/catchthemes"
 
-#: ../inc/theme-options.php:608 ../inc/theme-options.php:609
-#: ../inc/theme-options.php:776
+#: ../inc/theme-options.php:631 ../inc/theme-options.php:632
+#: ../inc/theme-options.php:799
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../inc/theme-options.php:611
+#: ../inc/theme-options.php:634
 msgid "http://twitter.com/#!/catchthemes"
 msgstr "http://twitter.com/#!/catchthemes"
 
-#: ../inc/theme-options.php:611 ../inc/theme-options.php:612
-#: ../inc/theme-options.php:781
+#: ../inc/theme-options.php:634 ../inc/theme-options.php:635
+#: ../inc/theme-options.php:804
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../inc/theme-options.php:614
+#: ../inc/theme-options.php:637
 msgid "http://catchthemes.com/donate/"
 msgstr "http://catchthemes.com/donate/"
 
-#: ../inc/theme-options.php:614 ../inc/theme-options.php:615
+#: ../inc/theme-options.php:637 ../inc/theme-options.php:638
 msgid "Donate Now"
 msgstr "Donirajte sada"
 
-#: ../inc/theme-options.php:662 ../inc/theme-options.php:770
-#: ../inc/theme-options.php:895
+#: ../inc/theme-options.php:685 ../inc/theme-options.php:793
+#: ../inc/theme-options.php:918
 msgid "Settings saved."
 msgstr "Postavke spremljene."
 
-#: ../inc/theme-options.php:666
+#: ../inc/theme-options.php:689
 msgid "Slider Options"
 msgstr "Opcije slajdera"
 
-#: ../inc/theme-options.php:670
+#: ../inc/theme-options.php:693
 msgid "Exclude Slider post from Home page posts:"
 msgstr "Isključi Slajder objavu iz Početne stranice s postovima:"
 
-#: ../inc/theme-options.php:672
+#: ../inc/theme-options.php:695
 msgid "Check to disable"
 msgstr "Označi za onemogućiti"
 
-#: ../inc/theme-options.php:675
+#: ../inc/theme-options.php:698
 msgid "Number of Slides"
 msgstr "Broj slajdova"
 
-#: ../inc/theme-options.php:681
+#: ../inc/theme-options.php:704
 msgid "Featured Col #"
 msgstr "Istaknuto boja #"
 
-#: ../inc/theme-options.php:683
+#: ../inc/theme-options.php:706
 msgid "Click Here To Edit"
 msgstr "Klikni ovdje za urediti"
 
-#: ../inc/theme-options.php:689
+#: ../inc/theme-options.php:712
 msgid ""
 "<strong>Note</strong>: Here you add in Post IDs which displays on Homepage "
 "Featured Slider."
@@ -850,168 +868,168 @@ msgstr ""
 "<strong>Napomena</strong>: Ovdje možete dodati ID objave koja se prikazuje "
 "na slajderu za isticanje na naslovnici."
 
-#: ../inc/theme-options.php:690 ../inc/theme-options.php:736
-#: ../inc/theme-options.php:861 ../inc/theme-options.php:922
-#: ../inc/theme-options.php:947
+#: ../inc/theme-options.php:713 ../inc/theme-options.php:759
+#: ../inc/theme-options.php:884 ../inc/theme-options.php:945
+#: ../inc/theme-options.php:970
 msgid "Save"
 msgstr "Spremi"
 
-#: ../inc/theme-options.php:694
+#: ../inc/theme-options.php:717
 msgid "Slider Effect Options"
 msgstr "Opcije za efekte slajdera"
 
-#: ../inc/theme-options.php:699
+#: ../inc/theme-options.php:722
 msgid "Transition Effect:"
 msgstr "Efekt prelaska:"
 
-#: ../inc/theme-options.php:704
+#: ../inc/theme-options.php:727
 msgid "fade"
 msgstr "izblijediti"
 
-#: ../inc/theme-options.php:705
+#: ../inc/theme-options.php:728
 msgid "wipe"
 msgstr "brisanje"
 
-#: ../inc/theme-options.php:706
+#: ../inc/theme-options.php:729
 msgid "scrollUp"
 msgstr "naviše"
 
-#: ../inc/theme-options.php:707
+#: ../inc/theme-options.php:730
 msgid "scrollDown"
 msgstr "naniže"
 
-#: ../inc/theme-options.php:708
+#: ../inc/theme-options.php:731
 msgid "scrollLeft"
 msgstr "nalijevo"
 
-#: ../inc/theme-options.php:709
+#: ../inc/theme-options.php:732
 msgid "scrollRight"
 msgstr "nadesno"
 
-#: ../inc/theme-options.php:710
+#: ../inc/theme-options.php:733
 msgid "blindX"
 msgstr "sjenaX"
 
-#: ../inc/theme-options.php:711
+#: ../inc/theme-options.php:734
 msgid "blindY"
 msgstr "sjenaY"
 
-#: ../inc/theme-options.php:712
+#: ../inc/theme-options.php:735
 msgid "blindZ"
 msgstr "sjenaZ"
 
-#: ../inc/theme-options.php:713
+#: ../inc/theme-options.php:736
 msgid "cover"
 msgstr "prekriti"
 
-#: ../inc/theme-options.php:714
+#: ../inc/theme-options.php:737
 msgid "shuffle"
 msgstr "miješanje"
 
-#: ../inc/theme-options.php:720
+#: ../inc/theme-options.php:743
 msgid "Transition Delay"
 msgstr "Kašnjenje prijelaza"
 
-#: ../inc/theme-options.php:723 ../inc/theme-options.php:732
+#: ../inc/theme-options.php:746 ../inc/theme-options.php:755
 msgid "second(s)"
 msgstr "sekundi"
 
-#: ../inc/theme-options.php:729
+#: ../inc/theme-options.php:752
 msgid "Transition Length"
 msgstr "Trajanje prijelaza"
 
-#: ../inc/theme-options.php:787
+#: ../inc/theme-options.php:810
 msgid "Google +"
 msgstr "Google +"
 
-#: ../inc/theme-options.php:793
+#: ../inc/theme-options.php:816
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../inc/theme-options.php:799
+#: ../inc/theme-options.php:822
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../inc/theme-options.php:805
+#: ../inc/theme-options.php:828
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../inc/theme-options.php:811
+#: ../inc/theme-options.php:834
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
-#: ../inc/theme-options.php:817
+#: ../inc/theme-options.php:840
 msgid "Deviantart"
 msgstr "Deviantart"
 
-#: ../inc/theme-options.php:823
+#: ../inc/theme-options.php:846
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../inc/theme-options.php:829
-msgid "Viemo"
-msgstr "Viemo"
+#: ../inc/theme-options.php:852
+msgid "Vimeo"
+msgstr "Vimeo"
 
-#: ../inc/theme-options.php:835
+#: ../inc/theme-options.php:858
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../inc/theme-options.php:841
+#: ../inc/theme-options.php:864
 msgid "MySpace"
 msgstr "MySpace"
 
-#: ../inc/theme-options.php:847
+#: ../inc/theme-options.php:870
 msgid "Aim"
 msgstr "Aim"
 
-#: ../inc/theme-options.php:853
-msgid "Flicker"
-msgstr "Flicker"
+#: ../inc/theme-options.php:876
+msgid "Flickr"
+msgstr "Flickr"
 
-#: ../inc/theme-options.php:860
+#: ../inc/theme-options.php:883
 msgid ""
 "<strong>Note:</strong> Enter the url for correponding social networking "
 "website"
 msgstr ""
 "<strong>Napomena:</strong> Unesite url odgovarajuće stranice društvene mreže"
 
-#: ../inc/theme-options.php:899
+#: ../inc/theme-options.php:922
 msgid "Webmaster Site Verification IDs"
 msgstr "Webmaster Site verifikacijski IDs"
 
-#: ../inc/theme-options.php:904
+#: ../inc/theme-options.php:927
 msgid "Google Site Verification ID"
 msgstr "Google Site verifikacijski ID"
 
-#: ../inc/theme-options.php:905
+#: ../inc/theme-options.php:928
 msgid "Enter your Google ID number only"
 msgstr "Unesite samo vaš Google ID broj"
 
-#: ../inc/theme-options.php:910
+#: ../inc/theme-options.php:933
 msgid "Yahoo Site Verification ID"
 msgstr "Yahoo Site verifikacijski ID"
 
-#: ../inc/theme-options.php:911
+#: ../inc/theme-options.php:934
 msgid "Enter your Yahoo ID number only"
 msgstr "Unesite samo vaš Yahoo ID broj"
 
-#: ../inc/theme-options.php:916
+#: ../inc/theme-options.php:939
 msgid "Bing Site Verification ID"
 msgstr "Bing Site verifikacijski ID"
 
-#: ../inc/theme-options.php:917
+#: ../inc/theme-options.php:940
 msgid "Enter your Bing ID number only"
 msgstr "Unesite samo vaš Bing ID broj"
 
-#: ../inc/theme-options.php:926
+#: ../inc/theme-options.php:949
 msgid "Webmaster Site Verification Code"
 msgstr "Webmaster Site verifikacijski kod"
 
-#: ../inc/theme-options.php:931
+#: ../inc/theme-options.php:954
 msgid "Analytics, site stats Header code"
 msgstr "Analytics, statistika stranice kod je u zaglavlju"
 
-#: ../inc/theme-options.php:939
+#: ../inc/theme-options.php:962
 msgid "Analytics, site stats footer code"
 msgstr "Analytics, statistika stranice kod je u podnožju"
 
